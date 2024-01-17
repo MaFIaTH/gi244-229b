@@ -16,11 +16,14 @@ public class CameraController : MonoBehaviour
     [Header("Zoom")]
     [SerializeField] private float zoomSpeed;
     [SerializeField] private float zoomModifier;
-
     [SerializeField] private float minZoomDist;
     [SerializeField] private float maxZoomDist;
-
     [SerializeField] private float dist;
+
+    [Header("Rotate")] 
+    [SerializeField] private float rotationAmount;
+    [SerializeField] private Quaternion newRotation;
+    
     
 
     public static CameraController Instance;
@@ -29,6 +32,8 @@ public class CameraController : MonoBehaviour
     {
         Instance = this;
         cam = Camera.main;
+        newRotation = transform.rotation;
+        rotationAmount = 1;
     }
 
     // Start is called before the first frame update
@@ -45,6 +50,7 @@ public class CameraController : MonoBehaviour
     {
         MoveByKeyboard();
         Zoom();
+        Rotate();
     }
 
     private void MoveByKeyboard()
@@ -79,7 +85,18 @@ public class CameraController : MonoBehaviour
         else if (dist > maxZoomDist && zoomModifier < 0f)
             return; //too far
 
-        cam.transform.position += cam.transform.forward * zoomModifier * zoomSpeed;
+        cam.transform.position += cam.transform.forward * (zoomModifier * zoomSpeed);
+    }
+    
+    void Rotate()
+    {
+        if (Input.GetKey(KeyCode.Q))
+            newRotation *= Quaternion.Euler(Vector3.up * rotationAmount);
+
+        if (Input.GetKey(KeyCode.E))
+            newRotation *= Quaternion.Euler(Vector3.up * -rotationAmount);
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * moveSpeed);
     }
 
 }

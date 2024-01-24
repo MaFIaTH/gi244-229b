@@ -24,8 +24,6 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float rotationAmount;
     [SerializeField] private Quaternion newRotation;
     
-    
-
     public static CameraController Instance;
 
     private void Awake()

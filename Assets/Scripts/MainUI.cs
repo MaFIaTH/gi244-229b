@@ -7,6 +7,10 @@ public class MainUI : MonoBehaviour
 {
     public static MainUI Instance;
 
+    [SerializeField] private GameObject selectionMarker;
+
+    public GameObject SelectionMarker => selectionMarker;
+
     private void Awake()
     {
         Instance = this;

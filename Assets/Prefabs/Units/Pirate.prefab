@@ -2071,7 +2071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &410610
 Transform:
   m_ObjectHideFlags: 0
@@ -2300,7 +2300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &457922
 Transform:
   m_ObjectHideFlags: 0
@@ -5143,7 +5143,7 @@ GameObject:
   - component: {fileID: 9126844344227207927}
   - component: {fileID: 301795730309320524}
   m_Layer: 6
-  m_Name: Soldier
+  m_Name: Pirate
   m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5259,7 +5259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d62494bffab8874d8f21d410468ac77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
   unitName: 
   unitPic: {fileID: 0}
   curHP: 0

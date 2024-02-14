@@ -11,6 +11,7 @@ public class Building : Structure
     [SerializeField] private float unitTimer = 0f;
     [SerializeField] private int curUnitProgress = 0;
     [SerializeField] private float curUnitWaitTime = 0f;
+    [SerializeField] private float unitSpawnTime = 100f;
 
     public Transform SpawnPoint => spawnPoint;
     public Transform RallyPoint => rallyPoint;
@@ -37,7 +38,7 @@ public class Building : Structure
         curUnitProgress++;
         unitTimer = 0f;
 
-        if (curUnitProgress < 100) return;
+        if (curUnitProgress < unitSpawnTime) return;
         curUnitProgress = 0;
         curUnitWaitTime = 0f;
         CreateUnitCompleted();
@@ -100,7 +101,7 @@ public class Building : Structure
     
     public void ToggleSelectionVisual(bool flag)
     {
-        if (SelectionVisual != null)
+        if (SelectionVisual)
             SelectionVisual.SetActive(flag);
     }
 

@@ -1,7 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
+public struct StructureCost
+{
+    public int food;
+    public int wood;
+    public int gold;
+    public int stone;
+}
 public abstract class Structure : MonoBehaviour
 {
     [SerializeField] protected string structureName;
@@ -10,6 +19,7 @@ public abstract class Structure : MonoBehaviour
     [SerializeField] protected int maxHP;
     [SerializeField] protected Faction faction;
     [SerializeField] protected GameObject selectionVisual;
+    [SerializeField] protected StructureCost structureCost;
     
     public string StructureName => structureName;
     public Sprite StructurePic => structurePic;
@@ -27,6 +37,18 @@ public abstract class Structure : MonoBehaviour
     }
 
     public GameObject SelectionVisual => selectionVisual;
+    public Faction Faction 
+    {
+        get => faction;
+        set => faction = value;
+    }
+
+    public StructureCost StructureCost
+    {
+        get => structureCost;
+        set => structureCost = value;
+    }
+    
 
     // Start is called before the first frame update
     void Start()

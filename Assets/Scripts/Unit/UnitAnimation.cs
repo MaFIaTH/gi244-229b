@@ -10,6 +10,7 @@ public class UnitAnimation : MonoBehaviour
     private static readonly int IsIdle = Animator.StringToHash("IsIdle");
     private static readonly int IsMove = Animator.StringToHash("IsMove");
     private static readonly int IsAttack = Animator.StringToHash("IsAttack");
+    private static readonly int IsBuilding = Animator.StringToHash("IsBuilding");
 
     private void Awake()
     {
@@ -35,17 +36,22 @@ public class UnitAnimation : MonoBehaviour
         anim.SetBool(IsIdle, false);
         anim.SetBool(IsMove, false);
         anim.SetBool(IsAttack, false);
+        anim.SetBool(IsBuilding, false);
 
         switch (u.State)
         {
             case UnitState.Idle:
                 anim.SetBool(IsIdle, true);
                 break;
+            case UnitState.MoveToBuild:
             case UnitState.Move:
                 anim.SetBool(IsMove, true);
                 break;
             case UnitState.Attack:
                 anim.SetBool(IsAttack, true);
+                break;
+            case UnitState.BuildProgress:
+                anim.SetBool(IsBuilding, true);
                 break;
         }
     }

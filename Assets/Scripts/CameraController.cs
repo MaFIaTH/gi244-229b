@@ -25,6 +25,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Quaternion newRotation;
     
     public static CameraController Instance;
+    public Camera Cam => cam;
 
     private void Awake()
     {
@@ -63,8 +64,9 @@ public class CameraController : MonoBehaviour
 
     private Vector3 ClampCamera(Vector3 lowerLeft, Vector3 topRight)
     {
-        Vector3 pos = new Vector3(Mathf.Clamp(transform.position.x, lowerLeft.x, topRight.x), transform.position.y,
-            Math.Clamp(transform.position.z, lowerLeft.z, topRight.z));
+        float clampX = Mathf.Clamp(transform.position.x, lowerLeft.x, topRight.x);
+        float clampZ = Mathf.Clamp(transform.position.z, lowerLeft.z, topRight.z);
+        Vector3 pos = new Vector3(clampX, transform.position.y, clampZ);
         return pos;
     }
     

@@ -93,17 +93,22 @@ public class UnitSelect : MonoBehaviour
         curBuilding = null;
         
         InfoManager.Instance.ClearAllInfo();
+        ActionManager.Instance.ClearAllInfo();
     }
     
     private void ShowUnit(Unit u)
     {
         InfoManager.Instance.ShowAllInfo(u);
+        if (!u.IsBuilder) return;
+        ActionManager.Instance.ShowBuilderMode(u);
     }
     
     private void ShowBuilding(Building b)
     {
         InfoManager.Instance.ShowAllInfo(b);
+        ActionManager.Instance.ShowCreateUnitMode(b);
     }
+    
     private void BuildingSelect(RaycastHit hit)
     {
         curBuilding = hit.collider.GetComponent<Building>();

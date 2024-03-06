@@ -9,6 +9,8 @@ public enum UnitState
     Idle,
     Move,
     Attack,
+    MoveToBuild,
+    BuildProgress,
     Die
 }
 
@@ -25,12 +27,15 @@ public struct UnitCost
     public int Gold => gold;
     public int Stone => stone;
 }
+
 public class Unit : MonoBehaviour
 {
     #region Fields
     [SerializeField] private int id;
     [SerializeField] private string unitName;
     [SerializeField] private Sprite unitPic;
+    [SerializeField] private bool isBuilder;
+    [SerializeField] private Builder builder;
     [SerializeField] private int curHP;
     [SerializeField] private int maxHP = 100;
     [SerializeField] private int moveSpeed = 5;
@@ -43,11 +48,18 @@ public class Unit : MonoBehaviour
     [SerializeField] private Faction faction;
     [SerializeField] private GameObject selectionVisual;
     [SerializeField] private UnitCost unitCost;
-    [SerializeField] private float unitWaitTime = 0.1f; //time for increasing progress 1% for this unit, less is faster
-
+    [SerializeField] private float unitWaitTime = 0.1f;
     #endregion
 
     #region Properties
+
+    public bool IsBuilder
+    {
+        get => isBuilder;
+        set => isBuilder = value;
+    }
+
+    public Builder Builder => builder;
 
     public int ID
     {
@@ -78,9 +90,13 @@ public class Unit : MonoBehaviour
         set => state = value;
     }
 
-    public NavMeshAgent NavAgent { get; private set; }
+    public Faction Faction
+    {
+        get => faction;
+        set => faction = value;
+    }
 
-    public Faction Faction => faction;
+    public NavMeshAgent NavAgent { get; private set; }
     public GameObject SelectionVisual => selectionVisual;
     public UnitCost UnitCost => unitCost;
     public float UnitWaitTime => unitWaitTime;
@@ -90,6 +106,8 @@ public class Unit : MonoBehaviour
     private void Awake()
     {
         NavAgent = GetComponent<NavMeshAgent>();
+        if (!isBuilder) return;
+        builder = GetComponent<Builder>();
     }
     
     // Start is called before the first frame update
@@ -140,6 +158,14 @@ public class Unit : MonoBehaviour
 
         if (distance <= 1f)
             SetState(UnitState.Idle);
+    }
+    
+    public void LookAt(Vector3 pos)
+    {
+        Vector3 dir = (pos - transform.position).normalized;
+        float angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+        
+        transform.rotation = Quaternion.Euler(0f, angle, 0f);
     }
 
 

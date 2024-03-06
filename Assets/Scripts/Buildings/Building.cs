@@ -1,9 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Building : Structure
 {
+    [SerializeField] private bool isFunctional = true;
+    [SerializeField] private bool isHQ;
+    [SerializeField] private float intoTheGround = 5f;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Transform rallyPoint;
     [SerializeField] private GameObject[] unitPrefabs;
@@ -12,23 +17,48 @@ public class Building : Structure
     [SerializeField] private int curUnitProgress = 0;
     [SerializeField] private float curUnitWaitTime = 0f;
     [SerializeField] private float unitSpawnTime = 100f;
-
+    
+    private NavMeshObstacle navMeshObstacle;
+    private float timer = 0f; //Constructing timer
+    private float waitTime = 0.5f; //How fast it will be construct, higher is longer
+    
+    public NavMeshObstacle NavMeshObstacle => navMeshObstacle;
+    public float WaitTime 
+    { 
+        get => waitTime;
+        set => waitTime = value;
+    }
+    public float Timer 
+    { 
+        get => timer;
+        set => timer = value;
+    }
+    public GameObject[] UnitPrefabs => unitPrefabs;
     public Transform SpawnPoint => spawnPoint;
     public Transform RallyPoint => rallyPoint;
+    public bool IsFunctional { get => isFunctional; set => isFunctional = value; }
+    public bool IsHQ => isHQ;
+    public float IntoTheGround => intoTheGround;
+
+    private void Awake()
+    {
+        navMeshObstacle = GetComponent<NavMeshObstacle>();
+    }
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        curHP = maxHP;
+
     }
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
-            ToCreateUnit(0);
-        else if (Input.GetKeyDown(KeyCode.H))
-            ToCreateUnit(1);
+        // if (Input.GetKeyDown(KeyCode.G))
+        //     ToCreateUnit(0);
+        // else if (Input.GetKeyDown(KeyCode.H))
+        //     ToCreateUnit(1);
 
         if (recruitList.Count <= 0 || !recruitList[0]) return;
         unitTimer += Time.deltaTime;
@@ -88,6 +118,7 @@ public class Building : Structure
         recruitList.RemoveAt(0);
 
         Unit unit = unitObj.GetComponent<Unit>();
+        unit.Faction = faction;
         unit.MoveToPosition(rallyPoint.position); //Go to Rally Point
 
         //Add unit into faction's Army

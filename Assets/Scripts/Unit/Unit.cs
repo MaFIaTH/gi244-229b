@@ -11,6 +11,10 @@ public enum UnitState
     Attack,
     MoveToBuild,
     BuildProgress,
+    MoveToResource,
+    Gather,
+    DeliverToHQ,
+    StoreAtHQ,
     Die
 }
 
@@ -36,6 +40,8 @@ public class Unit : MonoBehaviour
     [SerializeField] private Sprite unitPic;
     [SerializeField] private bool isBuilder;
     [SerializeField] private Builder builder;
+    [SerializeField] private bool isWorker;
+    [SerializeField] private Worker worker;
     [SerializeField] private int curHP;
     [SerializeField] private int maxHP = 100;
     [SerializeField] private int moveSpeed = 5;
@@ -49,10 +55,19 @@ public class Unit : MonoBehaviour
     [SerializeField] private GameObject selectionVisual;
     [SerializeField] private UnitCost unitCost;
     [SerializeField] private float unitWaitTime = 0.1f;
+    [SerializeField] private float pathUpdateRate = 1.0f;
+    [SerializeField] private float lastPathUpdateTime;
     #endregion
 
     #region Properties
 
+    public float PathUpdateRate => pathUpdateRate;
+
+    public float LastPathUpdateTime
+    {
+        get => lastPathUpdateTime;
+        set => lastPathUpdateTime = value;
+    }
     public bool IsBuilder
     {
         get => isBuilder;
@@ -100,14 +115,22 @@ public class Unit : MonoBehaviour
     public GameObject SelectionVisual => selectionVisual;
     public UnitCost UnitCost => unitCost;
     public float UnitWaitTime => unitWaitTime;
+
+    public bool IsWorker
+    {
+        get => isWorker;
+        set => isWorker = value;
+    }
+    
+    public Worker Worker => worker;
     #endregion
     
 
     private void Awake()
     {
         NavAgent = GetComponent<NavMeshAgent>();
-        if (!isBuilder) return;
-        builder = GetComponent<Builder>();
+        if (isBuilder) builder = GetComponent<Builder>();
+        if (isWorker) worker = GetComponent<Worker>();
     }
     
     // Start is called before the first frame update

@@ -85,7 +85,7 @@ public class ActionManager : MonoBehaviour
     public void CreateBuildingButton(int n)//Map with Create Building Btns
     {
         //Debug.Log("1 - Click Button: " + n);
-        Unit unit = UnitSelect.Instance.CurUnit;
+        Unit unit = UnitSelect.Instance.CurUnits[0];
         
         if (!unit.IsBuilder) return;
         unit.Builder.ToCreateNewBuilding(n);

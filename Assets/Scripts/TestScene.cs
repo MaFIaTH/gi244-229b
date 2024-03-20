@@ -27,7 +27,7 @@ public class TestScene : MonoBehaviour
     {
         foreach (Unit unit in units)
         {
-            unit.State = UnitState.Attack;
+            unit.State = UnitState.AttackUnit;
         }
     }
 }

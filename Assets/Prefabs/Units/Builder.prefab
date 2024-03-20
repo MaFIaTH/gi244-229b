@@ -5144,6 +5144,7 @@ GameObject:
   - component: {fileID: 301795730309320524}
   - component: {fileID: 6679642900243411511}
   - component: {fileID: 2097483059142110727}
+  - component: {fileID: 3562133228395809474}
   m_Layer: 6
   m_Name: Builder
   m_TagString: Unit
@@ -5285,6 +5286,12 @@ MonoBehaviour:
     gold: 20
     stone: 0
   unitWaitTime: 0.1
+  pathUpdateRate: 1
+  lastPathUpdateTime: 0
+  curEnemyUnitTarget: {fileID: 0}
+  attackRate: 1
+  lastAttackTime: 0
+  defendRange: 30
 --- !u!114 &301795730309320524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5338,6 +5345,18 @@ MonoBehaviour:
   amountCarry: 0
   maxCarry: 25
   carryType: 0
+--- !u!114 &3562133228395809474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236cd0b7f053d1148b427583d939fd32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &186630
 GameObject:
   m_ObjectHideFlags: 0

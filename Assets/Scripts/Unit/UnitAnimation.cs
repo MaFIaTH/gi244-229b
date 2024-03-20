@@ -12,6 +12,7 @@ public class UnitAnimation : MonoBehaviour
     private static readonly int IsAttack = Animator.StringToHash("IsAttack");
     private static readonly int IsBuilding = Animator.StringToHash("IsBuilding");
     private static readonly int IsChopping = Animator.StringToHash("IsChopping");
+    private static readonly int IsDead = Animator.StringToHash("IsDead");
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class UnitAnimation : MonoBehaviour
         anim.SetBool(IsAttack, false);
         anim.SetBool(IsBuilding, false);
         anim.SetBool(IsChopping, false);
+        anim.SetBool(IsDead, false);
 
         switch (u.State)
         {
@@ -48,11 +50,14 @@ public class UnitAnimation : MonoBehaviour
                 break;
             case UnitState.MoveToBuild:
             case UnitState.MoveToResource:
+            case UnitState.MoveToEnemy:
+            case UnitState.MoveToEnemyBuilding:
             case UnitState.DeliverToHQ:
             case UnitState.Move:
                 anim.SetBool(IsMove, true);
                 break;
-            case UnitState.Attack:
+            case UnitState.AttackUnit:
+            case UnitState.AttackBuilding:
                 anim.SetBool(IsAttack, true);
                 break;
             case UnitState.BuildProgress:
@@ -60,6 +65,9 @@ public class UnitAnimation : MonoBehaviour
                 break;
             case UnitState.Gather:
                 anim.SetBool(IsChopping, true);
+                break;
+            case UnitState.Die:
+                anim.SetBool(IsDead, true);
                 break;
         }
     }

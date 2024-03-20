@@ -5142,6 +5142,7 @@ GameObject:
   - component: {fileID: 1501896637118962116}
   - component: {fileID: 9126844344227207927}
   - component: {fileID: 301795730309320524}
+  - component: {fileID: 6747715425416163030}
   m_Layer: 6
   m_Name: Pirate
   m_TagString: Unit
@@ -5262,6 +5263,10 @@ MonoBehaviour:
   id: 1
   unitName: Pirate
   unitPic: {fileID: 21300000, guid: 4374b8ab350c1c847994a27f5a20edec, type: 3}
+  isBuilder: 0
+  builder: {fileID: 0}
+  isWorker: 0
+  worker: {fileID: 0}
   curHP: 0
   maxHP: 100
   moveSpeed: 5
@@ -5279,6 +5284,12 @@ MonoBehaviour:
     gold: 20
     stone: 0
   unitWaitTime: 0.1
+  pathUpdateRate: 1
+  lastPathUpdateTime: 0
+  curEnemyUnitTarget: {fileID: 0}
+  attackRate: 1
+  lastAttackTime: 0
+  defendRange: 30
 --- !u!114 &301795730309320524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5289,6 +5300,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85188baa042f9794d963741b1602be53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6747715425416163030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236cd0b7f053d1148b427583d939fd32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &186630

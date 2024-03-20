@@ -113,7 +113,8 @@ public class Building : Structure
         if (!unitPrefabs[id])
             return;
 
-        GameObject unitObj = Instantiate(unitPrefabs[id], spawnPoint.position, Quaternion.Euler(0f, 180f, 0f));
+        GameObject unitObj = Instantiate(unitPrefabs[id], spawnPoint.position, Quaternion.Euler(0f, 180f, 0f),
+            faction.UnitsParent);
 
         recruitList.RemoveAt(0);
 

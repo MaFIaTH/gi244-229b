@@ -15,8 +15,12 @@ public class MainUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI woodText;
     [SerializeField] private TextMeshProUGUI goldText;
     [SerializeField] private TextMeshProUGUI stoneText;
+    
+    [SerializeField] private RectTransform selectionBox;
+  
 
     public GameObject SelectionMarker => selectionMarker;
+    public RectTransform SelectionBox => selectionBox;
 
     private void Awake()
     {

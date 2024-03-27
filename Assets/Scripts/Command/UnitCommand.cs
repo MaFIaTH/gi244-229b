@@ -127,14 +127,27 @@ public class UnitCommand : MonoBehaviour
     {
         Building building = hit.collider.gameObject.GetComponent<Building>();
 
-        if (building == null)
+        if (!building)
             return;
 
         // if it is an enemy's building
         if (building.Faction == GameManager.Instance.EnemyFaction)
             UnitAttackEnemyBuilding(building, units);
+        else
+        {
+            if (building.CurHP >= building.MaxHP) return;
+            HelpFixBuilding(hit.collider.gameObject, units);
+            StartCoroutine(Formula.BlinkSelection(building.SelectionVisual));
+        }
     }
 
-
+    private void HelpFixBuilding(GameObject target, List<Unit> units)
+    {
+        foreach (Unit u in units)
+        {
+            if (u.IsBuilder)
+                u.Builder.BuilderStartFixBuilding(target.GetComponent<Building>());
+        }
+    }
 
 }

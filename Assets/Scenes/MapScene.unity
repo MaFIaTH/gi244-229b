@@ -837,7 +837,22 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1854069252107303073, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1607516299}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3500638115286677080, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67732225}
+    - targetCorrespondingSourceObject: {fileID: 3500638115286677080, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67732224}
+    - targetCorrespondingSourceObject: {fileID: 3500638115286677080, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67732223}
+    - targetCorrespondingSourceObject: {fileID: 3500638115286677080, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67732222}
+    - targetCorrespondingSourceObject: {fileID: 3500638115286677080, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67732221}
   m_SourcePrefab: {fileID: 100100000, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
 --- !u!4 &58456994 stripped
 Transform:
@@ -854,7 +869,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5990155449733490276, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
   m_PrefabInstance: {fileID: 58456993}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 67732218}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a8ae30d59f446846b8ab53a3b4d4058, type: 3}
@@ -909,6 +924,93 @@ MonoBehaviour:
   factions:
   - {fileID: 434848478}
   - {fileID: 58456996}
+--- !u!1 &67732218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3500638115286677080, guid: 9385698b41592ec48a2b99972fc93348, type: 3}
+  m_PrefabInstance: {fileID: 58456993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &67732221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67732218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d3497387600844fa61fb5175326b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightMultiplier: 1
+  timePassed: 0
+  fightersRequired: 4
+  increasePerWave: 1
+  squadSize: 0.5
+  timeLimit: 5
+--- !u!114 &67732222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67732218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9c0504217783e4ea8f29dcad3a4f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weightMultiplier: 1
+  timePassed: 0
+--- !u!114 &67732223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67732218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a840929c913c6184a95f82642a97e209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fighters: []
+  builders: []
+  workers: []
+  faction: {fileID: 0}
+--- !u!114 &67732224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67732218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2708286fa0098541ba6451287ea78a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bestAI: {fileID: 0}
+  bestAiValue: 0
+  randomRate: 0.3
+  frequency: 2
+--- !u!114 &67732225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67732218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17adad44635688d419c077c36e73da6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHQ: {fileID: 0}
+  curBarrack: {fileID: 0}
+  curHunterLodge: {fileID: 0}
+  unfinishedBuilding: {fileID: 0}
+  specificBuilder: {fileID: 0}
+  checkRate: 1
 --- !u!1 &70771323
 GameObject:
   m_ObjectHideFlags: 0

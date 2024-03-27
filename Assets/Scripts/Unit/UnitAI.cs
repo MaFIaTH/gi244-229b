@@ -65,7 +65,7 @@ public class UnitAI : MonoBehaviour
     
     protected void Check()
     {
-        if (unit.CurHP <= 0) return;
+        if (unit.CurHP <= 0 || unit.State == UnitState.Die) return;
         if (unit.IsWorker || unit.IsBuilder) return;
         // check if we have nearby enemies - if so, attack them
         if (unit.State == UnitState.AttackUnit || unit.State == UnitState.MoveToEnemy) return;

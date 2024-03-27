@@ -23,9 +23,9 @@ public class Faction : MonoBehaviour
     [SerializeField] private Transform buildingsParent;
     [SerializeField] private Transform ghostBuildingParent;
     [SerializeField] private Transform startPosition; //start position for Faction
+    [SerializeField] private GameObject[] buildingPrefabs;
+    [SerializeField] private GameObject[] unitPrefabs;
     
-
-
     [Header("Resources")]
     [SerializeField] private int food;
     [SerializeField] private int wood;
@@ -34,9 +34,10 @@ public class Faction : MonoBehaviour
     [SerializeField] private List<Unit> aliveUnits = new List<Unit>();
     [SerializeField] private List<Building> aliveBuildings = new List<Building>();
     [SerializeField] private int newResourceRange = 50; //range for worker to find new resource
-
-
-
+    
+    private int unitLimit = 6; //Initial unit limit
+    private int housingUnitNum = 5; //number of units per each housing
+    
     public Transform UnitsParent => unitsParent;
     public Transform BuildingsParent => buildingsParent;
     public Transform GhostBuildingParent => ghostBuildingParent;
@@ -47,6 +48,10 @@ public class Faction : MonoBehaviour
     public int Stone { get => stone; set => stone = value; }
     public List<Unit> AliveUnits => aliveUnits;
     public List<Building> AliveBuildings => aliveBuildings;
+    public GameObject[] BuildingPrefabs => buildingPrefabs;
+    public GameObject[] UnitPrefabs => unitPrefabs;
+    public int UnitLimit => unitLimit;
+    public int HousingUnitNum => housingUnitNum;
 
     public bool CheckUnitCost(Unit unit)
     {
@@ -161,6 +166,48 @@ public class Faction : MonoBehaviour
     public bool IsMyBuilding(Building b)
     {
         return aliveBuildings.Contains(b);
+    }
+
+    public void UpdateHousingLimit()
+    {
+        unitLimit = 6; //starting unit Limit
+
+        foreach (Building b in aliveBuildings)
+        {
+            if (b.IsHousing && b.IsFunctional)
+            {
+                unitLimit += housingUnitNum;
+            }
+        }
+
+        if (unitLimit >= 100)
+            unitLimit = 100;
+        else if (unitLimit < 0)
+            unitLimit = 0;
+
+        MainUI.Instance.UpdateAllResource(this);
+    }
+    
+    public bool CheckUnitCost(int i)
+    {
+        Unit unit = unitPrefabs[i].GetComponent<Unit>();
+
+        if (!unit)
+            return false;
+
+        if (food < unit.UnitCost.Food)
+            return false;
+
+        if (wood < unit.UnitCost.Wood)
+            return false;
+
+        if (gold < unit.UnitCost.Gold)
+            return false;
+
+        if (stone < unit.UnitCost.Stone)
+            return false;
+
+        return true;
     }
 
 

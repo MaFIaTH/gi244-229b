@@ -17,6 +17,8 @@ public class Building : Structure
     [SerializeField] private int curUnitProgress = 0;
     [SerializeField] private float curUnitWaitTime = 0f;
     [SerializeField] private float unitSpawnTime = 100f;
+    [SerializeField] private bool isHousing;
+    [SerializeField] private bool isBarrack;
     
     private NavMeshObstacle navMeshObstacle;
     private float timer = 0f; //Constructing timer
@@ -39,6 +41,8 @@ public class Building : Structure
     public bool IsFunctional { get => isFunctional; set => isFunctional = value; }
     public bool IsHQ => isHQ;
     public float IntoTheGround => intoTheGround;
+    public bool IsHousing => isHousing;
+    public bool IsBarrack => isBarrack;
 
     private void Awake()
     {
@@ -110,10 +114,10 @@ public class Building : Structure
     {
         int id = recruitList[0].ID;
 
-        if (!unitPrefabs[id])
+        if (!faction.UnitPrefabs[id])
             return;
 
-        GameObject unitObj = Instantiate(unitPrefabs[id], spawnPoint.position, Quaternion.Euler(0f, 180f, 0f),
+        GameObject unitObj = Instantiate(faction.UnitPrefabs[id], spawnPoint.position, Quaternion.Euler(0f, 180f, 0f),
             faction.UnitsParent);
 
         recruitList.RemoveAt(0);

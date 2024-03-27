@@ -2553,7 +2553,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f81a978cf85038f41a62cf0aad8c2981, type: 2}
+  - {fileID: 2100000, guid: 5bcd3942a0f042c4daca7e738a6606f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5262,7 +5262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d62494bffab8874d8f21d410468ac77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
+  id: 0
   unitName: Builder
   unitPic: {fileID: 21300000, guid: f4ad964e7acf6e74eb7ced8196797601, type: 3}
   isBuilder: 1
@@ -5289,6 +5289,7 @@ MonoBehaviour:
   pathUpdateRate: 1
   lastPathUpdateTime: 0
   curEnemyUnitTarget: {fileID: 0}
+  curEnemyBuildingTarget: {fileID: 0}
   attackRate: 1
   lastAttackTime: 0
   defendRange: 30
@@ -5321,9 +5322,13 @@ MonoBehaviour:
   buildingList:
   - {fileID: 7557337308204290146, guid: 265e1bc265fdc5343a93a11fc0ac6abc, type: 3}
   - {fileID: 7557337308204290146, guid: d0f17598348f9994a90e97406645e94a, type: 3}
+  - {fileID: 7557337308204290146, guid: b32f1df3c00e3a5438f063a999290706, type: 3}
+  - {fileID: 7557337308204290146, guid: aeb47dc73aa49124eaaff74764ca8568, type: 3}
   ghostBuildingList:
   - {fileID: 7557337308204290146, guid: 949023ee39968c243937a0ff0ce646cb, type: 3}
   - {fileID: 7557337308204290146, guid: 8e391f6df21a1ce4083dfcc20d376db8, type: 3}
+  - {fileID: 7557337308204290146, guid: b5fb32457a30e3e4fa123da634dbe427, type: 3}
+  - {fileID: 7557337308204290146, guid: b88059b7e16d23b48bbf0c5d158b6c50, type: 3}
   newBuilding: {fileID: 0}
   ghostBuilding: {fileID: 0}
   inProgressBuilding: {fileID: 0}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5215680071064791506
+--- !u!1 &7354449182748249658
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,104 +8,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4069110192634584573}
-  - component: {fileID: 8740292344414166870}
-  - component: {fileID: 4525296214081810175}
-  - component: {fileID: 1775561687953229407}
-  m_Layer: 2
-  m_Name: Plane
+  - component: {fileID: 1663691936856574752}
+  m_Layer: 0
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4069110192634584573
+--- !u!4 &1663691936856574752
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5215680071064791506}
+  m_GameObject: {fileID: 7354449182748249658}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: -0.7}
-  m_LocalScale: {x: 2.7232969, y: 1, z: 2.8023438}
+  m_LocalPosition: {x: 11.2, y: 0, z: -17.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5495399195352024218}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8740292344414166870
-MeshFilter:
+--- !u!1 &7443906869955026595
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5215680071064791506}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &4525296214081810175
-MeshRenderer:
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9215617541742927928}
+  m_Layer: 0
+  m_Name: RallyPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9215617541742927928
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5215680071064791506}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1775561687953229407
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5215680071064791506}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_GameObject: {fileID: 7443906869955026595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: -23.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5495399195352024218}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7557337308204290146
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,12 +71,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5495399195352024218}
+  - component: {fileID: 4884686731461979020}
   - component: {fileID: 3743448766764032215}
   - component: {fileID: 8518711338616808980}
-  - component: {fileID: 3775714785837502546}
-  m_Layer: 2
-  m_Name: Headquarter_Ghost
-  m_TagString: GhostBuilding
+  - component: {fileID: 1054642144301318318}
+  m_Layer: 8
+  m_Name: Br_Headquarter
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,9 +96,48 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1555877527533377506}
-  - {fileID: 4069110192634584573}
+  - {fileID: 1663691936856574752}
+  - {fileID: 9215617541742927928}
+  - {fileID: 3365871112765505655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4884686731461979020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7557337308204290146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d3236f330cd5941b0423518a1160c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  structureName: Headquarter
+  structurePic: {fileID: 21300000, guid: 2bb866a4b970e3346bfa474a2df36c58, type: 3}
+  curHP: 1000
+  maxHP: 1000
+  faction: {fileID: 0}
+  selectionVisual: {fileID: 1507898340863032204}
+  structureCost:
+    food: 50
+    wood: 50
+    gold: 50
+    stone: 50
+  isFunctional: 1
+  isHQ: 0
+  intoTheGround: 5
+  spawnPoint: {fileID: 1663691936856574752}
+  rallyPoint: {fileID: 9215617541742927928}
+  unitPrefabs:
+  - {fileID: 186328, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+  recruitList: []
+  unitTimer: 0
+  curUnitProgress: 0
+  curUnitWaitTime: 0
+  unitSpawnTime: 100
+  isHousing: 0
+  isBarrack: 0
 --- !u!65 &3743448766764032215
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -161,8 +157,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 28.7, y: 23.724064, z: 28.241152}
-  m_Center: {x: 0.77555084, y: 7.1315136, z: -1.5416365}
+  m_Size: {x: 30.795246, y: 26.821384, z: 31.702862}
+  m_Center: {x: -0.27207184, y: 8.680174, z: -1.1772461}
 --- !u!54 &8518711338616808980
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -190,74 +186,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &3775714785837502546
-MonoBehaviour:
+--- !u!208 &1054642144301318318
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7557337308204290146}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88397e3585169004e85111eaadb34927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBuild: 0
-  modelRdr:
-  - {fileID: 3966855090984434227}
-  - {fileID: 4229423389155726973}
-  - {fileID: 804866604746104959}
-  - {fileID: 4230751953868074296}
-  - {fileID: 1374428709171930308}
-  - {fileID: 6711017214826342991}
-  - {fileID: 6171182174970674842}
-  - {fileID: 8384754952534243392}
-  - {fileID: 5877514150165957079}
-  - {fileID: 8907228289981255441}
-  - {fileID: 5843574025545777297}
-  - {fileID: 3034149314996566601}
-  - {fileID: 5273948425291459244}
-  - {fileID: 3179745306103532845}
-  - {fileID: 4398249263000159377}
-  - {fileID: 9138551497091605588}
-  - {fileID: 1354107037312759099}
-  - {fileID: 6421903099730986631}
-  - {fileID: 615394404540527055}
-  - {fileID: 5986806258245595300}
-  - {fileID: 3040665614287052301}
-  - {fileID: 8283346407482630350}
-  - {fileID: 4086508825101649682}
-  - {fileID: 4418786442792304788}
-  - {fileID: 3054471583685384328}
-  - {fileID: 1037540997962314097}
-  - {fileID: 5765862950738375926}
-  - {fileID: 7675216646229858865}
-  - {fileID: 5168551288959026108}
-  - {fileID: 8097989740161374980}
-  - {fileID: 5225454142389829624}
-  - {fileID: 1303108376869128684}
-  - {fileID: 261693152193114343}
-  - {fileID: 7817966599191519528}
-  - {fileID: 7505384907113030246}
-  - {fileID: 7527557328431522123}
-  - {fileID: 4970356133010960915}
-  - {fileID: 5504141658958003044}
-  - {fileID: 5167711365007541482}
-  - {fileID: 3352486941189982089}
-  - {fileID: 2719467482876409685}
-  - {fileID: 6199544928248019368}
-  - {fileID: 2038081121915162137}
-  - {fileID: 4435297675906286209}
-  - {fileID: 3222249475185063420}
-  - {fileID: 4102667688936816904}
-  - {fileID: 1817283317504117250}
-  - {fileID: 3788620305794277872}
-  - {fileID: 6360691654229818251}
-  - {fileID: 8925030922546207312}
-  - {fileID: 4177862622098662905}
-  - {fileID: 2013552773960564436}
-  - {fileID: 4701537729852322861}
-  planeRdr: {fileID: 4525296214081810175}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 12.95, y: 11.5, z: 14}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 7, z: -1}
+  m_TimeToStationary: 0.5
 --- !u!1 &8587498051921085116
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1555877527533377506}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Components
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,10 +298,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_07
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -409,10 +349,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -452,20 +388,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &261693152193114343 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 261693152194996707}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &261693152194932989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -482,10 +409,6 @@ PrefabInstance:
     - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Stairs_04
-      objectReference: {fileID: 0}
-    - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_RootOrder
@@ -519,10 +442,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -533,11 +452,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
   m_PrefabInstance: {fileID: 615394404538166551}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &615394404540527055 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-  m_PrefabInstance: {fileID: 615394404538166551}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &804866604743746495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -546,10 +460,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 182678, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 495838, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -582,10 +492,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2360256, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -594,11 +500,6 @@ PrefabInstance:
 --- !u!4 &804866604743848801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 495838, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
-  m_PrefabInstance: {fileID: 804866604743746495}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &804866604746104959 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2360256, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
   m_PrefabInstance: {fileID: 804866604743746495}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &906367342765187203
@@ -612,10 +513,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_04
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_IsActive
@@ -683,10 +580,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 145518, guid: 128dd699d075b5b429ec8e28d6f5b072, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 425002, guid: 128dd699d075b5b429ec8e28d6f5b072, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -719,10 +612,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2395780, guid: 128dd699d075b5b429ec8e28d6f5b072, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -731,11 +620,6 @@ PrefabInstance:
 --- !u!4 &1037540997960057823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 425002, guid: 128dd699d075b5b429ec8e28d6f5b072, type: 3}
-  m_PrefabInstance: {fileID: 1037540997960450037}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1037540997962314097 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2395780, guid: 128dd699d075b5b429ec8e28d6f5b072, type: 3}
   m_PrefabInstance: {fileID: 1037540997960450037}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1303108376870966580
@@ -749,10 +633,6 @@ PrefabInstance:
     - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Stairs_02 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_RootOrder
@@ -786,20 +666,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
---- !u!23 &1303108376869128684 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-  m_PrefabInstance: {fileID: 1303108376870966580}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1303108376871143916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
@@ -816,10 +687,6 @@ PrefabInstance:
     - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Stairs_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_RootOrder
@@ -853,10 +720,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -865,11 +728,6 @@ PrefabInstance:
 --- !u!4 &1354107037310612795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-  m_PrefabInstance: {fileID: 1354107037310921187}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1354107037312759099 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
   m_PrefabInstance: {fileID: 1354107037310921187}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1374428709174290900
@@ -883,10 +741,6 @@ PrefabInstance:
     - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Roof_Single_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_RootOrder
@@ -920,20 +774,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
---- !u!23 &1374428709171930308 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-  m_PrefabInstance: {fileID: 1374428709174290900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1374428709173882692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
@@ -950,10 +795,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -1009,10 +850,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_05
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1067,10 +904,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_16
       objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
       value: 89
@@ -1115,20 +948,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &1817283317504117250 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 1817283317506036486}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1817283317506492952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -1145,10 +969,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -1190,10 +1010,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.70710623
       objectReference: {fileID: 0}
-    - target: {fileID: 2315612, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1202,11 +1018,6 @@ PrefabInstance:
 --- !u!4 &2013552773958722368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-  m_PrefabInstance: {fileID: 2013552773958249352}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &2013552773960564436 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2315612, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
   m_PrefabInstance: {fileID: 2013552773958249352}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2038081121912985373
@@ -1220,10 +1031,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_11
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -1269,10 +1076,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1281,11 +1084,6 @@ PrefabInstance:
 --- !u!4 &2038081121912786435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 2038081121912985373}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &2038081121915162137 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
   m_PrefabInstance: {fileID: 2038081121912985373}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2278766751051353930
@@ -1299,10 +1097,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -1358,10 +1152,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_09
       objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -1406,20 +1196,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &2719467482876409685 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 2719467482878422609}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2719467482878752591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -1436,10 +1217,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -1495,10 +1272,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_09
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1549,10 +1322,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 167410, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 414288, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -1585,20 +1354,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2344720, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
---- !u!23 &3034149314996566601 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2344720, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
-  m_PrefabInstance: {fileID: 3034149314998746457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3034149314998365961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414288, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
@@ -1615,10 +1375,6 @@ PrefabInstance:
     - target: {fileID: 147774, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Middle_02 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 147774, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 442960, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
       propertyPath: m_RootOrder
@@ -1652,20 +1408,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2345414, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
---- !u!23 &3040665614287052301 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2345414, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
-  m_PrefabInstance: {fileID: 3040665614289000395}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3040665614289343899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442960, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
@@ -1679,10 +1426,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 138240, guid: 546e8813d9a3ba4458cc87d5080c5e75, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 481832, guid: 546e8813d9a3ba4458cc87d5080c5e75, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -1715,20 +1458,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2369334, guid: 546e8813d9a3ba4458cc87d5080c5e75, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 546e8813d9a3ba4458cc87d5080c5e75, type: 3}
---- !u!23 &3054471583685384328 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2369334, guid: 546e8813d9a3ba4458cc87d5080c5e75, type: 3}
-  m_PrefabInstance: {fileID: 3054471583687229374}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3054471583687304598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481832, guid: 546e8813d9a3ba4458cc87d5080c5e75, type: 3}
@@ -1745,10 +1479,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_05
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -1804,10 +1534,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_05
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1862,10 +1588,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_04
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -1902,20 +1624,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2315612, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
---- !u!23 &3179745306103532845 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2315612, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-  m_PrefabInstance: {fileID: 3179745306105813105}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3179745306105368761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
@@ -1932,10 +1645,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_14
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -1981,20 +1690,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &3222249475185063420 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 3222249475187371256}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3222249475187439078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -2011,10 +1711,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_08
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -2056,20 +1752,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &3352486941189982089 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 3352486941191872141}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3352486941192325011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -2086,10 +1773,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_IsActive
@@ -2176,10 +1859,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_02
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2234,10 +1913,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_17
       objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
       value: 90
@@ -2282,10 +1957,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2296,11 +1967,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
   m_PrefabInstance: {fileID: 3788620305792006388}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &3788620305794277872 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 3788620305792006388}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3966855090986288289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2309,10 +1975,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 176662, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 428752, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -2345,10 +2007,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2342546, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2357,11 +2015,6 @@ PrefabInstance:
       addedObject: {fileID: 6490675528352623842}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
---- !u!23 &3966855090984434227 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2342546, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
-  m_PrefabInstance: {fileID: 3966855090986288289}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3966855090986716785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 428752, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
@@ -2378,10 +2031,6 @@ PrefabInstance:
     - target: {fileID: 167410, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Roof_Middle_01 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 167410, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 414288, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
       propertyPath: m_RootOrder
@@ -2415,10 +2064,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2344720, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2427,11 +2072,6 @@ PrefabInstance:
 --- !u!4 &4086508825099326034 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414288, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
-  m_PrefabInstance: {fileID: 4086508825099436034}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &4086508825101649682 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2344720, guid: 37ee9b4b95e1c6040a0327f07545a62f, type: 3}
   m_PrefabInstance: {fileID: 4086508825099436034}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4102667688938969100
@@ -2445,10 +2085,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_15
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -2494,20 +2130,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &4102667688936816904 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 4102667688938969100}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4102667688938635538 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -2524,10 +2151,6 @@ PrefabInstance:
     - target: {fileID: 176212, guid: 05a5ccf2524700d478ec12ced4d3ab30, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Fort_Door_10
-      objectReference: {fileID: 0}
-    - target: {fileID: 176212, guid: 05a5ccf2524700d478ec12ced4d3ab30, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 466408, guid: 05a5ccf2524700d478ec12ced4d3ab30, type: 3}
       propertyPath: m_RootOrder
@@ -2569,20 +2192,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.017717725
       objectReference: {fileID: 0}
-    - target: {fileID: 2359126, guid: 05a5ccf2524700d478ec12ced4d3ab30, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05a5ccf2524700d478ec12ced4d3ab30, type: 3}
---- !u!23 &4177862622098662905 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2359126, guid: 05a5ccf2524700d478ec12ced4d3ab30, type: 3}
-  m_PrefabInstance: {fileID: 4177862622100675247}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4177862622100997959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 466408, guid: 05a5ccf2524700d478ec12ced4d3ab30, type: 3}
@@ -2599,10 +2213,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_04
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -2654,10 +2264,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 154194, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 417892, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -2690,20 +2296,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2390028, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
---- !u!23 &4229423389155726973 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2390028, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
-  m_PrefabInstance: {fileID: 4229423389158108785}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4229423389157690901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 417892, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
@@ -2717,10 +2314,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -2753,20 +2346,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
---- !u!23 &4230751953868074296 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-  m_PrefabInstance: {fileID: 4230751953870430248}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4230751953870284472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
@@ -2783,10 +2367,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -2828,10 +2408,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.70710623
       objectReference: {fileID: 0}
-    - target: {fileID: 2315612, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2842,11 +2418,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
   m_PrefabInstance: {fileID: 4398249262997885389}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &4398249263000159377 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2315612, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-  m_PrefabInstance: {fileID: 4398249262997885389}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4418786442790155056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2855,10 +2426,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 182626, guid: 89d5dac5ecfacbd449d71b28997a6481, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 483688, guid: 89d5dac5ecfacbd449d71b28997a6481, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -2891,10 +2458,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2306980, guid: 89d5dac5ecfacbd449d71b28997a6481, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2903,11 +2466,6 @@ PrefabInstance:
 --- !u!4 &4418786442790490712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 483688, guid: 89d5dac5ecfacbd449d71b28997a6481, type: 3}
-  m_PrefabInstance: {fileID: 4418786442790155056}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &4418786442792304788 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2306980, guid: 89d5dac5ecfacbd449d71b28997a6481, type: 3}
   m_PrefabInstance: {fileID: 4418786442790155056}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4435297675908340613
@@ -2921,10 +2479,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_13
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -2970,20 +2524,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &4435297675906286209 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 4435297675908340613}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4435297675908661915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -3000,10 +2545,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_12
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -3049,10 +2590,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3061,11 +2598,6 @@ PrefabInstance:
 --- !u!4 &4701537729850504247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 4701537729850305833}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &4701537729852322861 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
   m_PrefabInstance: {fileID: 4701537729850305833}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4970356133013105431
@@ -3079,10 +2611,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_05
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -3124,20 +2652,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &4970356133010960915 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 4970356133013105431}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4970356133012779529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -3154,10 +2673,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_07
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -3199,20 +2714,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &5167711365007541482 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 5167711365009595886}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5167711365009392880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -3229,10 +2735,6 @@ PrefabInstance:
     - target: {fileID: 154194, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_End_02 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 154194, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 417892, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
       propertyPath: m_RootOrder
@@ -3266,20 +2768,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2390028, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
---- !u!23 &5168551288959026108 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2390028, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
-  m_PrefabInstance: {fileID: 5168551288961383344}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5168551288960998356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 417892, guid: 3a8cea3fa07d95e4abe6404b1e17497d, type: 3}
@@ -3296,10 +2789,6 @@ PrefabInstance:
     - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Stairs_01 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_RootOrder
@@ -3333,10 +2822,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3345,11 +2830,6 @@ PrefabInstance:
 --- !u!4 &5225454142387814392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-  m_PrefabInstance: {fileID: 5225454142387462944}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &5225454142389829624 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
   m_PrefabInstance: {fileID: 5225454142387462944}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5260305487587661833
@@ -3363,10 +2843,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -3418,10 +2894,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -3454,10 +2926,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3466,11 +2934,6 @@ PrefabInstance:
 --- !u!4 &5273948425289280172 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-  m_PrefabInstance: {fileID: 5273948425289627252}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &5273948425291459244 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
   m_PrefabInstance: {fileID: 5273948425289627252}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5357293282986140638
@@ -3484,10 +2947,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -3543,10 +3002,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_04
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3601,10 +3056,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_06
       objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -3645,20 +3096,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &5504141658958003044 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 5504141658960011872}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5504141658959821694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -3672,10 +3114,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 128312, guid: c973e4fa41dd2394cba85c1ece6cc9cf, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 433654, guid: c973e4fa41dd2394cba85c1ece6cc9cf, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -3708,20 +3146,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2356598, guid: c973e4fa41dd2394cba85c1ece6cc9cf, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c973e4fa41dd2394cba85c1ece6cc9cf, type: 3}
---- !u!23 &5765862950738375926 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2356598, guid: c973e4fa41dd2394cba85c1ece6cc9cf, type: 3}
-  m_PrefabInstance: {fileID: 5765862950740640128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5765862950740810870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 433654, guid: c973e4fa41dd2394cba85c1ece6cc9cf, type: 3}
@@ -3735,10 +3164,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 169232, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 485648, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -3771,20 +3196,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2318046, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
---- !u!23 &5843574025545777297 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2318046, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
-  m_PrefabInstance: {fileID: 5843574025547701839}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5843574025548150623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 485648, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
@@ -3801,10 +3217,6 @@ PrefabInstance:
     - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Roof_Single_02 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_RootOrder
@@ -3838,10 +3250,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3852,10 +3260,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
   m_PrefabInstance: {fileID: 5877514150164120775}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &5877514150165957079 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-  m_PrefabInstance: {fileID: 5877514150164120775}
+--- !u!1001 &5910847112420738882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5495399195352024218}
+    m_Modifications:
+    - target: {fileID: 5110087685711723726, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_Name
+      value: SelectionSquare
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110087685711723726, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+--- !u!1 &1507898340863032204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5110087685711723726, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+  m_PrefabInstance: {fileID: 5910847112420738882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3365871112765505655 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8985373743263532853, guid: f2047183a91ac8a469b74d390b8e2689, type: 3}
+  m_PrefabInstance: {fileID: 5910847112420738882}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5986806258247953532
 PrefabInstance:
@@ -3868,10 +3354,6 @@ PrefabInstance:
     - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Stairs_05
-      objectReference: {fileID: 0}
-    - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_RootOrder
@@ -3905,20 +3387,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
---- !u!23 &5986806258245595300 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-  m_PrefabInstance: {fileID: 5986806258247953532}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5986806258247872676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
@@ -3935,10 +3408,6 @@ PrefabInstance:
     - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Roof_Single_02 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_RootOrder
@@ -3972,20 +3441,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
---- !u!23 &6171182174970674842 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-  m_PrefabInstance: {fileID: 6171182174973031306}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6171182174972917018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
@@ -4002,10 +3462,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_10
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -4051,20 +3507,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &6199544928248019368 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 6199544928250323116}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6199544928249870770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -4081,10 +3528,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_18
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -4130,10 +3573,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4142,11 +3581,6 @@ PrefabInstance:
 --- !u!4 &6360691654227966865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 6360691654227894927}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &6360691654229818251 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
   m_PrefabInstance: {fileID: 6360691654227894927}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6409627240375606344
@@ -4160,10 +3594,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_04
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -4219,10 +3649,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Stairs_03
       objectReference: {fileID: 0}
-    - target: {fileID: 158828, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -4255,10 +3681,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4267,11 +3689,6 @@ PrefabInstance:
 --- !u!4 &6421903099728840327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482520, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
-  m_PrefabInstance: {fileID: 6421903099729156703}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &6421903099730986631 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2366680, guid: b34b05d6d6a339243a9ff816ae43bbb5, type: 3}
   m_PrefabInstance: {fileID: 6421903099729156703}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6447394498054115247
@@ -4285,10 +3702,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_10
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -4340,10 +3753,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3966855090986716785}
     m_Modifications:
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4423,10 +3832,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_04
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4481,10 +3886,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Roof_Single_02 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -4517,20 +3918,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
---- !u!23 &6711017214826342991 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-  m_PrefabInstance: {fileID: 6711017214828701535}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6711017214828585423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
@@ -4547,10 +3939,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -4606,10 +3994,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_03
       objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
       value: 76
@@ -4646,20 +4030,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &7505384907113030246 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 7505384907115314018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7505384907114848892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -4676,10 +4051,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_04
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -4721,20 +4092,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
---- !u!23 &7527557328431522123 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 7527557328433838159}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7527557328433373521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
@@ -4751,10 +4113,6 @@ PrefabInstance:
     - target: {fileID: 176662, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_End_01 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 176662, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 428752, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
       propertyPath: m_RootOrder
@@ -4788,10 +4146,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2342546, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4800,11 +4154,6 @@ PrefabInstance:
 --- !u!4 &7675216646228094579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 428752, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
-  m_PrefabInstance: {fileID: 7675216646227731619}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &7675216646229858865 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2342546, guid: e95e8967815e1244c838b9b4fb7f58c7, type: 3}
   m_PrefabInstance: {fileID: 7675216646227731619}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7782342829682582499
@@ -4818,10 +4167,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_IsActive
@@ -4893,10 +4238,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_02
       objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
       value: 75
@@ -4937,10 +4278,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4949,11 +4286,6 @@ PrefabInstance:
 --- !u!4 &7817966599189143858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 7817966599189477420}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &7817966599191519528 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
   m_PrefabInstance: {fileID: 7817966599189477420}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7820939402892062006
@@ -4967,10 +4299,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_08
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -5026,10 +4354,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_06
       objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5083,10 +4407,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -5142,10 +4462,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Roof_End_01 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 182678, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 495838, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -5178,20 +4494,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2360256, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
---- !u!23 &8097989740161374980 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2360256, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
-  m_PrefabInstance: {fileID: 8097989740163733700}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8097989740163237914 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 495838, guid: 7a0ce9eead1d2024a9c5289a6ccf2433, type: 3}
@@ -5208,10 +4515,6 @@ PrefabInstance:
     - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Pole_05
-      objectReference: {fileID: 0}
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
@@ -5267,10 +4570,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Mansion_Middle_02 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 169232, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 485648, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -5303,20 +4602,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2318046, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
---- !u!23 &8283346407482630350 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2318046, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
-  m_PrefabInstance: {fileID: 8283346407484685840}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8283346407484987136 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 485648, guid: 47b0d5afbeb67794a8e0957784d688f0, type: 3}
@@ -5333,10 +4623,6 @@ PrefabInstance:
     - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Mansion_Roof_Single_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 141108, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
       propertyPath: m_RootOrder
@@ -5370,20 +4656,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
---- !u!23 &8384754952534243392 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2362640, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
-  m_PrefabInstance: {fileID: 8384754952536601936}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8384754952536519616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444048, guid: ef3943b1b0f5dc842b1b63b6c37b8713, type: 3}
@@ -5397,10 +4674,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 147774, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 442960, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -5433,10 +4706,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2345414, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5445,11 +4714,6 @@ PrefabInstance:
 --- !u!4 &8907228289978958983 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442960, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
-  m_PrefabInstance: {fileID: 8907228289979336407}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &8907228289981255441 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2345414, guid: 9a6b534fd4dff0c49879406524b6070d, type: 3}
   m_PrefabInstance: {fileID: 8907228289979336407}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8925030922544022356
@@ -5463,10 +4727,6 @@ PrefabInstance:
     - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Stone_Wall_Large_19
-      objectReference: {fileID: 0}
-    - target: {fileID: 165010, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
       propertyPath: m_RootOrder
@@ -5512,10 +4772,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5526,11 +4782,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 465182, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
   m_PrefabInstance: {fileID: 8925030922544022356}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &8925030922546207312 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2316548, guid: 5b24c4e9a73f5eb4cbebd5c5e610623f, type: 3}
-  m_PrefabInstance: {fileID: 8925030922544022356}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9138551497093624072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5539,10 +4790,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1555877527533377506}
     m_Modifications:
-    - target: {fileID: 186370, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -5583,20 +4830,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2315612, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ba8a411e1c558104a9d99772d9c6a4cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
---- !u!23 &9138551497091605588 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2315612, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}
-  m_PrefabInstance: {fileID: 9138551497093624072}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9138551497093970368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 477384, guid: c97cb5681cda2174fad2653f1d6e5a9b, type: 3}

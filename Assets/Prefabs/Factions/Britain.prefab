@@ -55,12 +55,21 @@ MonoBehaviour:
   buildingsParent: {fileID: 7869469613476925782}
   ghostBuildingParent: {fileID: 7572601194661976201}
   startPosition: {fileID: 5417407306413597630}
+  buildingPrefabs:
+  - {fileID: 7557337308204290146, guid: 265e1bc265fdc5343a93a11fc0ac6abc, type: 3}
+  - {fileID: 7557337308204290146, guid: d0f17598348f9994a90e97406645e94a, type: 3}
+  - {fileID: 7557337308204290146, guid: b32f1df3c00e3a5438f063a999290706, type: 3}
+  - {fileID: 7557337308204290146, guid: aeb47dc73aa49124eaaff74764ca8568, type: 3}
+  unitPrefabs:
+  - {fileID: 186328, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+  - {fileID: 186328, guid: 46feeddea828cee41bb0273ed50200d8, type: 3}
   food: 0
   wood: 0
   gold: 0
   stone: 0
   aliveUnits: []
   aliveBuildings: []
+  newResourceRange: 50
 --- !u!114 &7790462473760272525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,8 +85,11 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 0
-  curUnit: {fileID: 0}
+  curUnits: []
   curBuilding: {fileID: 0}
+  curResource: {fileID: 0}
+  curEnemy: {fileID: 0}
+  selectionBox: {fileID: 0}
 --- !u!114 &2309563646358252921
 MonoBehaviour:
   m_ObjectHideFlags: 0

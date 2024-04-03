@@ -26,6 +26,8 @@ public class CameraController : MonoBehaviour
     
     public static CameraController Instance;
     public Camera Cam => cam;
+    public Transform Corner1 => corner1;
+    public Transform Corner2 => corner2;
 
     private void Awake()
     {

@@ -18,6 +18,8 @@ public class UnitSelect : MonoBehaviour
     private Vector2 startPos;
     private Camera cam;
     private Faction faction;
+    private float timer = 0f;
+    private float timeLimit = 0.5f;
 
     public List<Unit> CurUnits => curUnits;
     public Building CurBuilding => curBuilding;
@@ -55,6 +57,28 @@ public class UnitSelect : MonoBehaviour
         {
             ReleaseSelectionBox(Input.mousePosition);
             TrySelect(Input.mousePosition);
+        }
+        
+        timer += Time.deltaTime;
+        if (!(timer > timeLimit)) return;
+        timer = 0f;
+        UpdateUI();
+    }
+    
+    private void UpdateUI()
+    {
+        if (curUnits.Count == 1)
+            ShowUnit(curUnits[0]);
+        else if (curEnemy != null)
+            ShowEnemyUnit(curEnemy);
+        else if (curResource != null)
+            ShowResource();
+        else if (curBuilding != null)
+        {
+            if (GameManager.Instance.MyFaction.IsMyBuilding(curBuilding))
+                ShowBuilding(curBuilding);//Show building info
+            else
+                ShowEnemyBuilding(curBuilding);
         }
     }
     
@@ -116,6 +140,8 @@ public class UnitSelect : MonoBehaviour
         ClearAllSelectionVisual();
         curUnits.Clear();
         curBuilding = null;
+        curResource = null;
+        curEnemy = null;
         
         InfoManager.Instance.ClearAllInfo();
         ActionManager.Instance.ClearAllInfo();

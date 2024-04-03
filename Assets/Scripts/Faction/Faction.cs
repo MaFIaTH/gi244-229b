@@ -24,6 +24,7 @@ public class Faction : MonoBehaviour
     [SerializeField] private Transform ghostBuildingParent;
     [SerializeField] private Transform startPosition; //start position for Faction
     [SerializeField] private GameObject[] buildingPrefabs;
+    [SerializeField] private GameObject[] ghostBuildingPrefabs;
     [SerializeField] private GameObject[] unitPrefabs;
     
     [Header("Resources")]
@@ -50,8 +51,14 @@ public class Faction : MonoBehaviour
     public List<Building> AliveBuildings => aliveBuildings;
     public GameObject[] BuildingPrefabs => buildingPrefabs;
     public GameObject[] UnitPrefabs => unitPrefabs;
+    public GameObject[] GhostBuildingPrefabs => ghostBuildingPrefabs;
     public int UnitLimit => unitLimit;
     public int HousingUnitNum => housingUnitNum;
+
+    private void Start()
+    {
+        UpdateHousingLimit();
+    }
 
     public bool CheckUnitCost(Unit unit)
     {
@@ -151,6 +158,7 @@ public class Faction : MonoBehaviour
     {
         foreach (Building b in aliveBuildings)
         {
+            if (!b) continue;
             if (b.IsHQ)
                 return b.SpawnPoint.position;
         }
@@ -185,6 +193,7 @@ public class Faction : MonoBehaviour
         else if (unitLimit < 0)
             unitLimit = 0;
 
+        if (this != GameManager.Instance.MyFaction) return;
         MainUI.Instance.UpdateAllResource(this);
     }
     

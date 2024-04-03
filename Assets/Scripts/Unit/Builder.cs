@@ -227,6 +227,7 @@ public class Builder : MonoBehaviour
 
         inProgressBuilding = null; //Clear this job off his mind
         unit.SetState(UnitState.Idle);
+        unit.Faction.UpdateHousingLimit();
     }
     
     private void OnTriggerStay(Collider other)
@@ -246,7 +247,4 @@ public class Builder : MonoBehaviour
         if (ghostBuilding != null)
             Destroy(ghostBuilding);
     }
-
-
-
 }

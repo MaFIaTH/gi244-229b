@@ -39,6 +39,7 @@ public class Faction : MonoBehaviour
     private int unitLimit = 6; //Initial unit limit
     private int housingUnitNum = 5; //number of units per each housing
     
+    public Nations Nations => nations;
     public Transform UnitsParent => unitsParent;
     public Transform BuildingsParent => buildingsParent;
     public Transform GhostBuildingParent => ghostBuildingParent;

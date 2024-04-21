@@ -36,6 +36,11 @@ public class ResourceSource : MonoBehaviour
     public GameObject SelectionVisual => selectionVisual; //Selection Ring
     public int MaxQuantity => maxQuantity;
 
+    public void Start()
+    {
+        onRsrcQuantityChange.Invoke();
+    }
+
     //called when a unit gathers the resource
     public void GatherResource(int amountRequest)
     {
@@ -43,6 +48,7 @@ public class ResourceSource : MonoBehaviour
         int amountToGive = amountRequest > quantity ? quantity : amountRequest;
 
         quantity -= amountToGive;
+        onRsrcQuantityChange.Invoke();
 
         // if we're depleted, delete the resource
         if (quantity <= 0)

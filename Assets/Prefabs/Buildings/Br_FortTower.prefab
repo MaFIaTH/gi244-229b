@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 5359330548615999115}
   - component: {fileID: 8154464564039113766}
   - component: {fileID: 7761091621183168799}
+  - component: {fileID: -1736433834524494226}
   m_Layer: 8
   m_Name: Br_FortTower
   m_TagString: Building
@@ -209,6 +210,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.2375088, y: 1.1957, z: -0.4915371}
   m_TimeToStationary: 0.5
+--- !u!114 &-1736433834524494226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7557337308204290146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b2b79c8e9ec334b8554c7a95352fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8587498051921085116
 GameObject:
   m_ObjectHideFlags: 0

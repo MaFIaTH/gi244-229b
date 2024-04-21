@@ -5145,6 +5145,7 @@ GameObject:
   - component: {fileID: 6679642900243411511}
   - component: {fileID: 2097483059142110727}
   - component: {fileID: 3562133228395809474}
+  - component: {fileID: 8523572171585423993}
   m_Layer: 6
   m_Name: BritishBuilder
   m_TagString: Unit
@@ -5275,7 +5276,7 @@ MonoBehaviour:
   minWpnDamage: 0
   maxWpnDamage: 0
   armour: 0
-  visualRange: 0
+  visualRange: 60
   weaponRange: 0
   state: 0
   faction: {fileID: 0}
@@ -5360,6 +5361,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 236cd0b7f053d1148b427583d939fd32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8523572171585423993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b2b79c8e9ec334b8554c7a95352fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &186630

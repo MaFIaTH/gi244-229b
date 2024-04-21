@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public Faction MyFaction => myFaction;
     public Faction EnemyFaction => enemyFaction;
+    public Faction[] Factions => factions;
 
     private void Awake()
     {

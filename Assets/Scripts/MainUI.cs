@@ -17,6 +17,8 @@ public class MainUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI stoneText;
     
     [SerializeField] private RectTransform selectionBox;
+    private Canvas canvas;
+    public Canvas Canvas => canvas;
   
 
     public GameObject SelectionMarker => selectionMarker;
@@ -25,6 +27,7 @@ public class MainUI : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        canvas = GetComponent<Canvas>();
     }
 
     // Start is called before the first frame update
@@ -47,4 +50,16 @@ public class MainUI : MonoBehaviour
         goldText.text = faction.Gold.ToString();
         stoneText.text = faction.Stone.ToString();
     }
+    
+    public Vector3 ScalePosition(Vector3 pos)
+    {
+        Vector3 newPos;
+
+        newPos = new Vector3(pos.x * canvas.transform.localScale.x
+            , pos.y * canvas.transform.localScale.y
+            , pos.z * canvas.transform.localScale.z);
+
+        return newPos;
+    }
+
 }

@@ -8,7 +8,7 @@ public class UnitSelect : MonoBehaviour
     public static UnitSelect Instance;
     
     [SerializeField] private LayerMask layerMask;
-    [SerializeField] private List<Unit> curUnits; //current selected single unit
+    [SerializeField] private List<Unit> curUnits = new List<Unit>(); //current selected single unit
     [SerializeField] private Building curBuilding; //current selected single building
     [SerializeField] private ResourceSource curResource;
     [SerializeField] private Unit curEnemy;

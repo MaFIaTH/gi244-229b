@@ -219,7 +219,38 @@ public class Faction : MonoBehaviour
 
         return true;
     }
+    
+    public Color GetNationColor()
+    {
+        Color col;
 
-
-
+        switch(nations)
+        {
+            case Nations.Neutral:
+                col = Color.white;
+                break;
+            case Nations.Britain:
+                col = Color.red;
+                break;
+            case Nations.Pirates:
+                col = Color.black;
+                break;
+            case Nations.France:
+                col = Color.blue;
+                break;
+            case Nations.Spain:
+                col = Color.yellow;
+                break;
+            case Nations.Portugal:
+                col = Color.green;
+                break;
+            case Nations.Netherlands:
+                col = new Color32 (255, 157, 0, 255);
+                break;
+            default:
+                col = Color.white;
+                break;
+        }
+        return col;
+    }
 }

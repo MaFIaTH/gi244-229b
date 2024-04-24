@@ -12,6 +12,11 @@ public class SelectMap : MonoBehaviour
     {
         mapScene = mapName;
     }
+    
+    public void ChooseDuration(int index)
+    {
+        Settings.SelectDuration(index);
+    }
 
     // Update is called once per frame
     public void StartGame()

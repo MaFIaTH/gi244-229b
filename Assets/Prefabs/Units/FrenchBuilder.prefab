@@ -56,6 +56,54 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 82b5a382815781648bf1d875e4002dc3, type: 2}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: buildingList.Array.data[0]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: aab8aae2d3d707843a8716c0d9f87ea3, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: buildingList.Array.data[1]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: 3a5c093e22101b74cac36cc7a631cff1, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: buildingList.Array.data[2]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: 57acb82dfa083a44f8355418ca449ce4, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: buildingList.Array.data[3]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: e43b5816d6c69c04290a429b97c6cb43, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: buildingList.Array.data[4]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: ab29d36de6851c44ebbba424c3cd0dbc, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: ghostBuildingList.Array.data[0]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: ebbb22c3f719e4044916a41c9882bdf9, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: ghostBuildingList.Array.data[1]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: 9d9b9fbfcffb89a43a9f14bcc3f6e112, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: ghostBuildingList.Array.data[2]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: c29d34acf818ce7479d627fb42e171a0, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: ghostBuildingList.Array.data[3]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: f377fcabf18ec7348ae89a55785ae985, type: 3}
+    - target: {fileID: 6679642900243411511, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: ghostBuildingList.Array.data[4]
+      value: 
+      objectReference: {fileID: 7557337308204290146, guid: 61f3f8f7651eef34a9d358bce6d68ca8, type: 3}
+    - target: {fileID: 9126844344227207927, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: unitPic
+      value: 
+      objectReference: {fileID: 21300000, guid: d82ea7073236a2c44b8c296cd72856c8, type: 3}
+    - target: {fileID: 9126844344227207927, guid: 5d72019507bf1c7418a5f4e8bd4cd45b, type: 3}
+      propertyPath: unitName
+      value: French, Builder
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -15,6 +15,7 @@ public abstract class Structure : MonoBehaviour
 {
     [SerializeField] protected string structureName;
     [SerializeField] protected Sprite structurePic;
+    [SerializeField] protected int baseMaxHP = 100;
     [SerializeField] protected int curHP;
     [SerializeField] protected int maxHP;
     [SerializeField] protected Faction faction;
@@ -24,6 +25,12 @@ public abstract class Structure : MonoBehaviour
     public string StructureName => structureName;
     public Sprite StructurePic => structurePic;
 
+    
+    public int BaseMaxHP
+    {
+        get => baseMaxHP;
+        set => baseMaxHP = value;
+    }
     public int CurHP
     {
         get => curHP;

@@ -114,8 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d3236f330cd5941b0423518a1160c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  structureName: Headquarter
+  structureName: French, HQ
   structurePic: {fileID: 21300000, guid: 2bb866a4b970e3346bfa474a2df36c58, type: 3}
+  baseMaxHP: 1000
   curHP: 1000
   maxHP: 1000
   faction: {fileID: 0}
@@ -136,6 +137,7 @@ MonoBehaviour:
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
+  baseUnitSpawnTime: 10
   unitSpawnTime: 100
   isHousing: 0
   isBarrack: 0

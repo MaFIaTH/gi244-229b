@@ -14,7 +14,7 @@ public class UnitAI : MonoBehaviour
     
     void Start()
     {
-        InvokeRepeating("Check", 0.0f, checkRate);
+        InvokeRepeating(nameof(Check), 0.0f, checkRate);
         unitLayerMask = LayerMask.GetMask("Unit");
         buildingLayerMask = LayerMask.GetMask("Building");
 

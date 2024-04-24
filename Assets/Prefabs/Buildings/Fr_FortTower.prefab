@@ -162,8 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17127621ada08664fb8c90af2f7a50ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  structureName: Fort
+  structureName: French, Fort
   structurePic: {fileID: 21300000, guid: 8829308541f4cee4393c22b1131e28ab, type: 3}
+  baseMaxHP: 500
   curHP: 500
   maxHP: 500
   faction: {fileID: 0}
@@ -183,6 +184,7 @@ MonoBehaviour:
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
+  baseUnitSpawnTime: 10
   unitSpawnTime: 1
   isHousing: 0
   isBarrack: 0

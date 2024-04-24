@@ -17,6 +17,8 @@ public class MainUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI stoneText;
     
     [SerializeField] private RectTransform selectionBox;
+    
+    [SerializeField] private TextMeshProUGUI gameTimerText;
     private Canvas canvas;
     public Canvas Canvas => canvas;
   
@@ -60,6 +62,11 @@ public class MainUI : MonoBehaviour
             , pos.z * canvas.transform.localScale.z);
 
         return newPos;
+    }
+    
+    public void UpdateGameTimer(float time)
+    {
+        gameTimerText.text = TimeSpan.FromSeconds(time).ToString("mm':'ss");
     }
 
 }

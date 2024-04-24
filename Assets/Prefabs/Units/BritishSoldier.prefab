@@ -5263,7 +5263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   unitName: Brit, Soldier
-  unitPic: {fileID: 21300000, guid: c29aedc06e6339544a1bdde2e2a7114e, type: 3}
+  unitPic: {fileID: 21300000, guid: 1ef52f9cc47fa0a45898bd4437280132, type: 3}
   isBuilder: 0
   builder: {fileID: 0}
   isWorker: 0
@@ -5275,7 +5275,7 @@ MonoBehaviour:
   maxWpnDamage: 10
   armour: 0
   visualRange: 60
-  weaponRange: 10
+  weaponRange: 25
   state: 0
   faction: {fileID: 0}
   selectionVisual: {fileID: 8836732913872291405}

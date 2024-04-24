@@ -16,7 +16,8 @@ public class Building : Structure
     [SerializeField] private float unitTimer = 0f;
     [SerializeField] private int curUnitProgress = 0;
     [SerializeField] private float curUnitWaitTime = 0f;
-    [SerializeField] private float unitSpawnTime = 100f;
+    [SerializeField] private float baseUnitSpawnTime = 10f;
+    [SerializeField] private float unitSpawnTime = 10f;
     [SerializeField] private bool isHousing;
     [SerializeField] private bool isBarrack;
     
@@ -34,6 +35,16 @@ public class Building : Structure
     { 
         get => timer;
         set => timer = value;
+    }
+    public float BaseUnitSpawnTime 
+    { 
+        get => baseUnitSpawnTime;
+        set => baseUnitSpawnTime = value;
+    }
+    public float UnitSpawnTime 
+    { 
+        get => unitSpawnTime;
+        set => unitSpawnTime = value;
     }
     public GameObject[] UnitPrefabs => unitPrefabs;
     public Transform SpawnPoint => spawnPoint;
@@ -160,6 +171,11 @@ public class Building : Structure
 
         if (IsHousing)
             faction.UpdateHousingLimit();
+
+        if (IsHQ)
+        {
+            GameManager.Instance.GameOver(true, faction.Nations);
+        }
 
         base.Die();
 

@@ -114,8 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d3236f330cd5941b0423518a1160c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  structureName: House
+  structureName: Brit, House
   structurePic: {fileID: 21300000, guid: af8b455af89124c4f84b9fadc61163d3, type: 3}
+  baseMaxHP: 250
   curHP: 250
   maxHP: 250
   faction: {fileID: 0}
@@ -135,6 +136,7 @@ MonoBehaviour:
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
+  baseUnitSpawnTime: 10
   unitSpawnTime: 100
   isHousing: 1
   isBarrack: 0

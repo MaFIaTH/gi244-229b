@@ -5264,8 +5264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  unitName: Builder
-  unitPic: {fileID: 21300000, guid: f4ad964e7acf6e74eb7ced8196797601, type: 3}
+  unitName: Brit, Builder
+  unitPic: {fileID: 21300000, guid: 69588a34b07236243a85681bf101c76c, type: 3}
   isBuilder: 1
   builder: {fileID: 0}
   isWorker: 1
@@ -5325,11 +5325,13 @@ MonoBehaviour:
   - {fileID: 7557337308204290146, guid: d0f17598348f9994a90e97406645e94a, type: 3}
   - {fileID: 7557337308204290146, guid: b32f1df3c00e3a5438f063a999290706, type: 3}
   - {fileID: 7557337308204290146, guid: aeb47dc73aa49124eaaff74764ca8568, type: 3}
+  - {fileID: 7557337308204290146, guid: b93dc7f10d0c9de419f8e9d7b900ea51, type: 3}
   ghostBuildingList:
   - {fileID: 7557337308204290146, guid: 949023ee39968c243937a0ff0ce646cb, type: 3}
   - {fileID: 7557337308204290146, guid: 8e391f6df21a1ce4083dfcc20d376db8, type: 3}
   - {fileID: 7557337308204290146, guid: b5fb32457a30e3e4fa123da634dbe427, type: 3}
   - {fileID: 7557337308204290146, guid: b88059b7e16d23b48bbf0c5d158b6c50, type: 3}
+  - {fileID: 7557337308204290146, guid: 6f03e7ad8fbee9e4c8a2e5d981d2f25a, type: 3}
   newBuilding: {fileID: 0}
   ghostBuilding: {fileID: 0}
   inProgressBuilding: {fileID: 0}

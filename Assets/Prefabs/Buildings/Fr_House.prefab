@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   structureName: House
   structurePic: {fileID: 21300000, guid: af8b455af89124c4f84b9fadc61163d3, type: 3}
+  baseMaxHP: 250
   curHP: 250
   maxHP: 250
   faction: {fileID: 0}
@@ -135,6 +136,7 @@ MonoBehaviour:
   unitTimer: 0
   curUnitProgress: 0
   curUnitWaitTime: 0
+  baseUnitSpawnTime: 10
   unitSpawnTime: 100
   isHousing: 1
   isBarrack: 0

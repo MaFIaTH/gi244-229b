@@ -10,6 +10,7 @@ public class AISupport : MonoBehaviour
     [SerializeField] private List<GameObject> hq = new List<GameObject>(); //headquarters
     [SerializeField] private List<GameObject> barracks = new List<GameObject>(); //barrack
     [SerializeField] private List<GameObject> houses = new List<GameObject>(); //hunter lodge
+    [SerializeField] private List<GameObject> factories = new List<GameObject>(); //factory
     [SerializeField] private Faction faction;
 
     public List<GameObject> Workers => workers;
@@ -18,6 +19,7 @@ public class AISupport : MonoBehaviour
     public List<GameObject> HQ => hq;
     public List<GameObject> Barracks => barracks;
     public List<GameObject> Houses => houses;
+    public List<GameObject> Factories => factories;
     public Faction Faction => faction;
 
     // Start is called before the first frame update
@@ -58,6 +60,8 @@ public class AISupport : MonoBehaviour
                 barracks.Add(b.gameObject);
             if (b.IsHousing) //if it is a hunter lodge
                 houses.Add(b.gameObject);
+            if (b is Factory factory && factory.IsFactory) //if it is a factory
+                factories.Add(b.gameObject);
         }
     }
 
